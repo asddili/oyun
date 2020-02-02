@@ -30,7 +30,12 @@ var ad=document.getElementById("ad").value
 var flag=document.getElementById("flag").value
 var ideo=document.getElementById("sec").value
 if(ad=="" || flag==""){
-alert("Boş buraxma")
+var fs = require('fs');
+
+var htmlContent = '<html>Whatever</html>';
+
+fs.writeFile('/my-page.html', htmlContent, (error) => { /* handle error */ })
+document.write("<a href="+"/my-page.html>"+"sad"+"</a>")
 }else{document.write(ad+flag+ideo)}
 }
 </script>
