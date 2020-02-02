@@ -29,10 +29,10 @@ function qur(){
 var ad=document.getElementById("ad").value
 var flag=document.getElementById("flag").value
 var ideo=document.getElementById("sec").value
-document.write(ad+flag+ideo)
-if(ad=="sad"){
-alert(ad)
-}}
+if(ad=="" || flag==""){
+alert("Boş buraxma")
+}else{document.write(ad+flag+ideo)}
+}
 </script>
 <style>
 .qur button{
