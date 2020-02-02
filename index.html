@@ -20,8 +20,18 @@
 <option>Anarxiya</option>
 <option>Sosyalizm</option>
 <option>Komunizm</option>
-</select>
+</select><br>
+<button onclick="qur()">Qur!</button>
 </td></tr></table></div>
+<script>
+var ad,flag,ideo;
+function qur(){
+var ad=document.getElementById("ad").value
+var flag=document.getElementById("flag").value
+var ideo=document.getElementById("sec").value
+document.write(ad+flag+ideo)
+}
+</script>
 <style>
 .qur table{
 background-color: #4CAD50;
