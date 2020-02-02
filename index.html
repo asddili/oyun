@@ -29,6 +29,9 @@ function qur(){
 var ad=document.getElementById("ad").value
 var flag=document.getElementById("flag").value
 var ideo=document.getElementById("sec").value
+if(ad!=="" || flag!=="" || ideo!==""){
+alert("Boş yer buraxma")}
+else{
 document.write(ad+flag+ideo)
 }
 </script>
@@ -36,7 +39,7 @@ document.write(ad+flag+ideo)
 .qur button{
 background-color: #4CAD50;
 border: 1px solid black
-border-radius: 5px
+border-radius: 5px;
 }
 .qur table{
 background-color: #4CAD50;
